@@ -1,0 +1,106 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box; }
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500; }
+
+p {
+  font-size: 1.4rem; }
+  @media screen and (min-width: 420px) {
+    p {
+      font-size: 1.6rem; } }
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900; }
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 900; }
+  @media screen and (min-width: 420px) {
+    h2 {
+      font-size: 1.6rem; } }
+
+.order {
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #e0e8ff;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (min-width: 420px) {
+    .order {
+      background-image: url(./images/pattern-background-desktop.svg); } }
+  .order__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px; }
+    @media screen and (min-width: 420px) {
+      .order__data {
+        padding: 4.8rem; } }
+  .order__card {
+    border-radius: 2rem;
+    overflow: hidden;
+    max-width: 45rem;
+    max-height: 69.7rem;
+    margin: 0px 2.4rem;
+    background-color: white;
+    box-shadow: 0px 4rem 4rem -2rem rgba(13, 48, 189, 0.151826); }
+  .order__image {
+    width: 100%; }
+  .order__header {
+    padding-bottom: 1.6rem;
+    text-align: center; }
+  .order__info {
+    color: #7280a7;
+    text-align: center;
+    padding-bottom: 2rem; }
+  .order__item {
+    display: flex;
+    align-items: center;
+    background-color: #f5f7ff;
+    border-radius: 2rem;
+    padding: 1.6rem;
+    width: 100%;
+    margin-bottom: 2.4rem; }
+    @media screen and (min-width: 420px) {
+      .order__item {
+        padding: 2.5rem;
+        margin-bottom: 3.2rem; } }
+    .order__item__icon {
+      padding-right: 2rem; }
+    .order__item__link {
+      margin-left: auto;
+      color: #3829e0;
+      font-size: 1.4rem; }
+    .order__item__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .order__item__price {
+      color: #7280a7; }
+  .order__button {
+    border: none;
+    border-radius: 1.1rem;
+    padding: 1.5rem 0;
+    width: 100%; }
+    .order__button:hover {
+      cursor: pointer; }
+    .order__button--proceed {
+      margin-bottom: 1.7rem;
+      background-color: #3829e0;
+      color: white;
+      box-shadow: 0px 2rem 2rem rgba(56, 42, 225, 0.190291); }
+    .order__button--cancel {
+      color: #7280a7;
+      background-color: transparent;
+      padding-bottom: 0; }
